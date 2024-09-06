@@ -1,0 +1,17 @@
+- Construa e inicie o container
+docker-compose up --build -d 
+
+- Entre no container com um terminal interativo
+docker-compose run --rm app bash
+
+- Executar o script
+python src/script1.py
+
+Instalar pacotes
+- pip install (nomepacote)
+
+- Gera um Arquivo de Requisitos
+pip freeze > requirements.txt
+
+Listar todos os pacotes instalados e desinstalar:
+pip freeze | xargs pip uninstall -y
