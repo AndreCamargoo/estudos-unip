@@ -68,3 +68,20 @@ print(novo_texto.rstrip())
 # Removendo espaços em branco apenas à esquerda da string
 novo_texto = '  aula python, bora pra cima    '
 print(novo_texto.lstrip())
+
+# Paramêtros do print
+print(10,2,5, sep='-', end='\r\n') 
+print(10,2,5, sep='-', end='###') 
+
+# 1. sep
+# O parâmetro sep define o separador que será usado entre os itens que você está imprimindo. Por padrão, o separador é um espaço (' '), mas você pode definir um separador personalizado.
+
+# 2. end
+# O parâmetro end define o que será adicionado no final da saída. Por padrão, end é uma nova linha ('\n'), o que significa que o próximo print começará em uma nova linha. 
+# Você pode substituir isso por qualquer string.
+
+# 3. \r
+# Significado: O \r vem de "Carriage Return" (retorno de carro). Esse caractere faz com que o cursor volte para o início da linha atual sem avançar para a próxima linha.
+
+# 4. \n
+# Significado: O \n vem de "Line Feed" (alimentação de linha). Esse caractere faz com que o cursor vá para a próxima linha.
