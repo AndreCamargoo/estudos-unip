@@ -15,10 +15,16 @@ import os
 nome = 'André Camargo'
 print(nome)
 
-# Acessando uma variável de ambiente
+# Acessando uma variável de ambiente através do arquivo .env
 # Certifique-se de que a variável de ambiente 'MINHA_VARIAVEL' está definida no seu sistema
 variavel_ambiente = os.getenv('MINHA_VARIAVEL', 'Valor padrão para variável de ambiente')
 print(variavel_ambiente)
+
+# Criando uma variavel através do terminal (linux)
+# export USUARIO=andre
+# echo $USUARIO
+
+print(os.getenv('USUARIO'))
 
 # Considerações Adicionais
 # Segurança: Use variáveis de ambiente para armazenar informações sensíveis como senhas e chaves de API.
