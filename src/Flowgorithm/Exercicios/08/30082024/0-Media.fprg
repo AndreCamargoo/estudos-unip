@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="media"/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-28 09:28:32 "/>
+        <attribute name="created" value="YW5kcmU7QU5EUkU7MjAyNC0wOC0yODsiMDk6MTg6MjMgIjsyMDg4"/>
+        <attribute name="edited" value="YW5kcmU7QU5EUkU7MjAyNC0wOC0yODsiMDk6Mjg6MzIgIjsxOzIxOTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, result" type="Real" array="False" size=""/>
+            <declare name="refazer" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Digite sua primeira nota&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite sua segunda nota&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite sua terceira nota&quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="result" expression="(n1+n2+n3)/3"/>
+            <if expression="result &gt;= 7">
+                <then>
+                    <output expression="&quot;Voc&#234; passou, sua nota foi: &quot;&amp;result" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; reprovou, sua nota foi: &quot;&amp;result" newline="True"/>
+                    <output expression="&quot;Deseja refazer uma nova prova?&quot;" newline="True"/>
+                    <input variable="refazer"/>
+                    <if expression="refazer == True">
+                        <then>
+                            <output expression="&quot;Digite sua primeira nota&quot;" newline="True"/>
+                            <input variable="n1"/>
+                            <output expression="&quot;Digite sua segunda nota&quot;" newline="True"/>
+                            <input variable="n2"/>
+                            <output expression="&quot;Digite sua terceira nota&quot;" newline="True"/>
+                            <input variable="n3"/>
+                            <assign variable="result" expression="(n1+n2+n3)/3"/>
+                            <if expression="result &gt;= 7">
+                                <then>
+                                    <output expression="&quot;Voc&#234; passou, sua nota foi: &quot;&amp;result" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Infelizmente n&#227;o foi essa vez&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Infelizmente voc&#234; tera que refazer o ano letivo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

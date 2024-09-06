@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio-1-avaliacao-ponderada"/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-03 08:08:41 "/>
+        <attribute name="created" value="YW5kcmU7QU5EUkU7MjAyNC0wOS0wMzsiMDc6Mjk6MzkgIjsyMDg5"/>
+        <attribute name="edited" value="YW5kcmU7QU5EUkU7MjAyNC0wOS0wMzsiMDg6MDg6NDEgIjsxOzIxODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, mp" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe a primeira nota&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Informe a segunda nota&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Informe a terceira nota&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <assign variable="mp" expression="((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / (2+3+5)"/>
+            <if expression="(mp &gt;= 8) AND (mp &lt;= 10)">
+                <then>
+                    <output expression="&quot;Sua nota foi entre 8 e 10&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(mp  &gt;= 7) AND (mp &lt; 8)">
+                        <then>
+                            <output expression="&quot;Sua nota foi entre 7 e menor 8&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(mp &gt;= 6) AND (mp &lt; 7)">
+                                <then>
+                                    <output expression="&quot;Sua nota foi entre 6 e menor 7&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(mp &gt;= 5) AND (mp &lt; 6)">
+                                        <then>
+                                            <output expression="&quot;Sua nota foi entre 5 e menor 6&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Sua nota foi menor que 5&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
