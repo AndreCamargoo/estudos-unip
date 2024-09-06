@@ -3,8 +3,10 @@
 
 using namespace std;
 
+// O IMC é uma medida geral e pode não levar em consideração fatores como composição corporal, massa muscular ou distribuição de gordura
+
 int main() {
-	// Configura a localidade para portugu�s
+	// Configura a localidade para portugu�s
 	setlocale(LC_ALL, "pt_BR.UTF-8");
 
 	float peso, altura, imc;
