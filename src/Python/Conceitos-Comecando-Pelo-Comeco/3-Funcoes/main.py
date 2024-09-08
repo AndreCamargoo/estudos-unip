@@ -24,3 +24,26 @@ def enviarEmail(email):
 print(somar(1,88))
 
 enviarEmail('andre.camargo@msn.com')
+
+qtd_de_dolares = 1000050.4
+print(qtd_de_dolares)
+
+# Aqui, você está formatando o número para incluir separadores de milhar e limitar a duas casas decimais. A expressão :,.2f é um especificador de formato que:
+print(f'$ {qtd_de_dolares:,.2f}')
+
+
+def formatar_reais(valor):
+    return f'R$ {valor:,.2f}'.replace(',', 'X').replace('.', ',').replace('X', '.')
+
+qtd_de_reais = 1000050.4
+formatted_reais = formatar_reais(qtd_de_reais)
+
+print(formatted_reais)
+
+# 1. Formato dos Dólares (USD)
+# Separador de Milhar: Vírgula (,)
+# Separador Decimal: Ponto (.)
+
+# 2. Formato dos Reais (BRL)
+# Separador de Milhar: Ponto (.)
+# Separador Decimal: Vírgula (,)

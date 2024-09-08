@@ -45,3 +45,45 @@ if not nome:
     print('Nome não foi informado')
 else:
     print(f'Meu nome é {nome}')
+
+
+# Exemplo 1: Verificação de faixa etária
+idade = 27
+if idade < 18:
+    print('Menor de idade')
+elif idade >= 18 and idade < 30:
+    print('Jovem adulto')
+elif idade >= 30 and idade < 60:
+    print('Adulto')
+else:
+    print('Sênior')
+
+# Exemplo 2: Checando múltiplas condições
+senha = 'andre'
+usuario = 'admin'
+if usuario == 'admin' and senha == 'abc123':
+    print('Login bem-sucedido')
+else:
+    print('Usuário ou senha incorretos')
+
+# Exemplo 3: Combinando operadores lógicos
+temperatura = 22
+umidade = 85
+if (temperatura > 20 and temperatura < 30) or umidade > 80:
+    print('Condições climáticas favoráveis')
+else:
+    print('Condições climáticas desfavoráveis')
+
+# Exemplo 4: Verificação de presença de dados
+dados = {'nome': 'Ana', 'idade': 22}
+if 'nome' in dados and 'idade' in dados:
+    print('Todos os dados estão presentes')
+else:
+    print('Faltam dados')
+
+# Exemplo 5: Inversão de condição com NOT
+ligado = False
+if not ligado:
+    print('O dispositivo está desligado')
+else:
+    print('O dispositivo está ligado')
