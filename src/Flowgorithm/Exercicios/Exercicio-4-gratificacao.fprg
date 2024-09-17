@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio-4-gratificacao"/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 04:24:48 "/>
+        <attribute name="created" value="YW5kcmU7QU5EUkU7MjAyNC0wOS0xNzsiMDQ6MDA6MjkgIjsyMDc5"/>
+        <attribute name="edited" value="YW5kcmU7QU5EUkU7MjAyNC0wOS0xNzsiMDQ6MjQ6NDggIjsyOzIxOTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="horasExtras, horasFalta, premio" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o n&#250;mero de horas extras&quot;" newline="True"/>
+            <input variable="horasExtras"/>
+            <output expression="&quot;Digite o n&#250;mero de horas falta&quot;" newline="True"/>
+            <input variable="horasFalta"/>
+            <assign variable="premio" expression="(horasExtras*60) - (2/3 * (horasFalta*60))"/>
+            <output expression="&quot;Suas horas extra foram de &quot;&amp;(horasExtras*60)&amp;&quot; minutos&quot;" newline="True"/>
+            <output expression="&quot;Suas horas faltadas foram de &quot;&amp;(horasFalta*60)&amp;&quot; minutos&quot;" newline="True"/>
+            <if expression="premio &gt; 2400">
+                <then>
+                    <output expression="&quot;Seu premio ser&#225; de R$ 500&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(premio &gt;= 1800) AND (premio &lt; 2400)">
+                        <then>
+                            <output expression="&quot;Seu premio ser&#225; de R$ 400&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(premio &gt;= 1200) AND (premio &lt; 1800)">
+                                <then>
+                                    <output expression="&quot;Seu premio ser&#225; de R$ 300&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(premio &gt;= 600) AND (premio &lt; 1200)">
+                                        <then>
+                                            <output expression="&quot;Seu premio ser&#225; de R$ 200&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Seu premio ser&#225; de R$ 100&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
