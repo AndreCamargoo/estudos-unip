@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\andre\Desktop\pseu\C++\Exercicio-2-Imc\x64\Debug\Imc.exe</FullPath>
+      <FullPath>\\wsl.localhost\Ubuntu\home\andre\projects\faculdade\src\C++\Exercicios\Semestre-2\Exercicio-2-Imc\x64\Debug\Imc.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

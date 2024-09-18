@@ -1,2 +1,3 @@
 ﻿  premio.cpp
-  Exercicio-4-premio.vcxproj -> C:\Users\andre\Desktop\pseu\C++\Exercicio-4-premio\x64\Debug\Exercicio-4-premio.exe
+\\wsl.localhost\Ubuntu\home\andre\projects\faculdade\src\C++\Exercicios\Semestre-2\Exercicio-4-premio\premio.cpp(22,37): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+  Exercicio-4-premio.vcxproj -> \\wsl.localhost\Ubuntu\home\andre\projects\faculdade\src\C++\Exercicios\Semestre-2\Exercicio-4-premio\x64\Debug\Exercicio-4-premio.exe

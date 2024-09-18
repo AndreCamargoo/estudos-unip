@@ -3,39 +3,38 @@
 
 using namespace std;
 
-// O IMC é uma medida geral e pode não levar em consideração fatores como composição corporal, massa muscular ou distribuição de gordura
+// O IMC Ã© uma medida geral e pode nÃ£o levar em consideraÃ§Ã£o fatores como composiÃ§Ã£o corporal, massa muscular ou distribuiÃ§Ã£o de gordura
 
 int main() {
-	// Configura a localidade para português
-	setlocale(LC_ALL, "portuguese");
+    // Configura a localidade para portuguÃªs
+    setlocale(LC_ALL, "portuguese");
 
-	float peso, altura, imc;
+    float peso, altura, imc;
 
-	cout << "Digite seu peso: ";
-	cin >> peso;
+    // Usando um loop for para calcular o IMC de apenas uma pessoa
+    for (int i = 0; i < 1; i++) {
+        cout << "Digite seu peso: ";
+        cin >> peso;
 
-	cout << "Digite sua altura: ";
-	cin >> altura;
+        cout << "Digite sua altura: ";
+        cin >> altura;
 
-	imc = peso / (altura * altura);
+        imc = peso / (altura * altura);
 
-	if (imc <= 18.5) {
-		cout << "Magreza";
+        cout << "Seu IMC Ã©: " << imc << " - ";
 
-	}
-	else if ((imc >= 18.6) && (imc < 24.9) ) {
-		cout << "Peso normal";
-	}
-	else if ( (imc >= 25) && (imc < 29.9)) {
-		cout << "Obesidade de grau I";
+        if (imc <= 18.5) {
+            cout << "Magreza" << endl;
+        } else if (imc <= 24.9) {
+            cout << "Peso normal" << endl;
+        } else if (imc <= 29.9) {
+            cout << "Obesidade de grau I" << endl;
+        } else if (imc <= 34.9) {
+            cout << "Obesidade de grau II" << endl;
+        } else {
+            cout << "Obesidade de grau III" << endl;
+        }
+    }
 
-	}else if ((imc >= 35) && (imc < 39.9)) {
-		cout << "Obesidade de grau II";
-
-	}
-	else {
-		cout << "Obesidade de grau III";
-	}
-
-	return 0;
+    return 0;
 }
