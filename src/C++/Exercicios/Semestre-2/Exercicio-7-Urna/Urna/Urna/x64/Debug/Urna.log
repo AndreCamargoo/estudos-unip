@@ -1,0 +1,6 @@
+﻿  Urna.cpp
+C:\Users\andre\Desktop\pseu\C++\Urna\Urna\Urna.cpp(109,49): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\andre\Desktop\pseu\C++\Urna\Urna\Urna.cpp(110,47): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\andre\Desktop\pseu\C++\Urna\Urna\Urna.cpp(113,49): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+C:\Users\andre\Desktop\pseu\C++\Urna\Urna\Urna.cpp(114,47): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+  Urna.vcxproj -> C:\Users\andre\Desktop\pseu\C++\Urna\Urna\x64\Debug\Urna.exe

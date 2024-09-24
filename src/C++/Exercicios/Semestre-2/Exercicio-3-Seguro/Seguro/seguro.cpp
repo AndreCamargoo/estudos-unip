@@ -8,10 +8,9 @@ int main()
 	int idade;
 	char grupo;
 
-	// Configura a localidade para português
 	setlocale(LC_ALL, "portuguese");
 
-	cout << "Informe sua idade" << endl;;
+	cout << "Informe sua idade" << endl;
 	cin >> idade;
 
 	cout << "Informe o grupo" << endl;
@@ -24,50 +23,50 @@ int main()
 		case 'b':
 			
 			if ((idade >= 18) && (idade <= 24)) {
-				cout << "Código é 7";
+				cout << "CÃ³digo Ã© 7" << endl;
 			}
 			else  if ((idade >= 25) && (idade <= 40)) {
-				cout << "Código é 4";
+				cout << "CÃ³digo Ã© 4"<< endl;
 			}
 			else if ((idade >= 41) && (idade <= 70)) {
-				cout << "Código é 1";
+				cout << "CÃ³digo Ã© 1"<< endl;
 			}
 			break;
 
 		case 'm':
 			if ((idade >= 18) && (idade <= 24)) {
-				cout << "Código é 8";
+				cout << "CÃ³digo Ã© 8" << endl;
 			}
 			else  if ((idade >= 25) && (idade <= 40)) {
-				cout << "Código é 5";
+				cout << "CÃ³digo Ã© 5" << endl;
 			}
 			else if ((idade >= 41) && (idade <= 70)) {
-				cout << "Código é 2";
+				cout << "CÃ³digo Ã© 2" << endl;
 			}
 			break;
 			break;
 
 		case 'a':
 			if ((idade >= 18) && (idade <= 24)) {
-				cout << "Código é 9";
+				cout << "CÃ³digo Ã© 9" << endl;
 			}
 			else  if ((idade >= 25) && (idade <= 40)) {
-				cout << "Código é 6";
+				cout << "CÃ³digo Ã© 6" << endl;
 			}
 			else if ((idade >= 41) && (idade <= 70)) {
-				cout << "Código é 3";
+				cout << "CÃ³digo Ã© 3" << endl;
 			}
 			break;
 			break;
 
 		default:
-			cout << "Grupo não reconhecido";
+			cout << "Grupo nÃ£o reconhecido";
 			break;
 		}
 
 	}
 	else {;
-		cout << "Você não pode adquirir um sseguro";
+		cout << "VocÃª nÃ£o pode adquirir um seguro";
 	}
 
 	return 0;

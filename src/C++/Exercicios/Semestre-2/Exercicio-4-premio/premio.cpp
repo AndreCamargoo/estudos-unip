@@ -4,10 +4,10 @@
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "portuguese");
-
     float horasExtras, horasFalta, premio;
     char continuar;
+
+    setlocale(LC_ALL, "portuguese");
 
     do {
         cout << "Digite as horas extras: ";
@@ -39,22 +39,22 @@ int main() {
             premioCategoria = 100;
         }
 
-        // Usando switch para exibir o prêmio
+        // Usando switch para exibir o prï¿½mio
         switch (premioCategoria) {
         case 500:
-            cout << "Seu premio será de R$ 500" << endl;
+            cout << "Seu premio serÃ¡ de R$ 500" << endl;
             break;
         case 400:
-            cout << "Seu premio será de R$ 400" << endl;
+            cout << "Seu premio serÃ¡ de R$ 400" << endl;
             break;
         case 300:
-            cout << "Seu premio será de R$ 300" << endl;
+            cout << "Seu premio serÃ¡ de R$ 300" << endl;
             break;
         case 200:
-            cout << "Seu premio será de R$ 200" << endl;
+            cout << "Seu premio serÃ¡ de R$ 200" << endl;
             break;
         case 100:
-            cout << "Seu premio será de R$ 100" << endl;
+            cout << "Seu premio serÃ¡ de R$ 100" << endl;
             break;
         }
 

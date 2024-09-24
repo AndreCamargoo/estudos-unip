@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio-5-salario"/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-19 07:45:42 "/>
+        <attribute name="created" value="YW5kcmU7QU5EUkU7MjAyNC0wOS0xOTsiMDc6MjM6MTYgIjsyMDg1"/>
+        <attribute name="edited" value="YW5kcmU7QU5EUkU7MjAyNC0wOS0xOTsiMDc6NDU6NDIgIjsxOzIxOTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salarioMinimo, horasTrabalhadas, horasExtras" type="Real" array="False" size=""/>
+            <declare name="dependentes" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o valor do sal&#225;rio m&#237;nimo: R$&quot;" newline="True"/>
+            <input variable="salarioMinimo"/>
+            <output expression="&quot;Informe o n&#250;mero de horas trabalhadas:&quot;" newline="True"/>
+            <input variable="horasTrabalhadas"/>
+            <output expression="&quot;Informe o n&#250;mero de dependentes:&quot;" newline="True"/>
+            <input variable="dependentes"/>
+            <output expression="&quot;Informe a quantidade de horas extras trabalhadas&quot;" newline="True"/>
+            <input variable="horasExtras"/>
+            <declare name="valorHoraTrabalhada, salarioMes, valorDependentes, valorHoraExtra, valorHorasExtras, salarioBruto, irrf" type="Real" array="False" size=""/>
+            <assign variable="valorHoraTrabalhada" expression="salarioMinimo / 5"/>
+            <assign variable="salarioMes" expression="horasTrabalhadas * valorHoraTrabalhada"/>
+            <assign variable="valorDependentes" expression="dependentes * 32.00"/>
+            <assign variable="valorHoraExtra" expression="valorHoraTrabalhada * 1.5"/>
+            <assign variable="valorHorasExtras" expression="horasExtras * valorHoraExtra"/>
+            <assign variable="salarioBruto" expression="salarioMes + valorDependentes + valorHorasExtras"/>
+            <if expression="salarioBruto &lt; 200">
+                <then>
+                    <assign variable="irrf" expression="0"/>
+                </then>
+                <else>
+                    <if expression="salarioBruto &lt;= 500">
+                        <then>
+                            <assign variable="irrf" expression="salarioBruto * 0.10"/>
+                        </then>
+                        <else>
+                            <assign variable="irrf" expression="salarioBruto * 0.20"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <declare name="salarioLiquido, gratificacao" type="Integer" array="False" size=""/>
+            <assign variable="salarioLiquido" expression="salarioBruto - irrf"/>
+            <if expression="salarioLiquido &lt;= 350">
+                <then>
+                    <assign variable="gratificacao" expression="100"/>
+                </then>
+                <else>
+                    <assign variable="gratificacao" expression="50"/>
+                </else>
+            </if>
+            <declare name="salarioFinal" type="Real" array="False" size=""/>
+            <assign variable="salarioFinal" expression="salarioLiquido + gratificacao"/>
+            <output expression="&quot;Sal&#225;rio bruto: R$ &quot;&amp;salarioBruto" newline="True"/>
+            <output expression="&quot;IRRF: R$ &quot;&amp;irrf" newline="True"/>
+            <output expression="&quot;Sal&#225;rio l&#237;quido: R$ &quot;&amp;salarioLiquido" newline="True"/>
+            <output expression="&quot;Gratifica&#231;&#227;o: R$ &quot;&amp;gratificacao" newline="True"/>
+            <output expression="&quot;Sal&#225;rio final a receber: R$ &quot;&amp;salarioFinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

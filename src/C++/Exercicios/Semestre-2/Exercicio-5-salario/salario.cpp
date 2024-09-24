@@ -9,11 +9,11 @@ int main() {
 
     setlocale(LC_ALL, "portuguese");
 
-    cout << "Informe o valor do salário mínimo: R$ ";
+    cout << "Informe o valor do salÃ¡rio mÃ­nimo: R$ ";
     cin >> salario_minimo;
-    cout << "Informe o número de horas trabalhadas: ";
+    cout << "Informe o nÃºmero de horas trabalhadas: ";
     cin >> horas_trabalhadas;
-    cout << "Informe o número de dependentes: ";
+    cout << "Informe o nÃºmero de dependentes: ";
     cin >> dependentes;
     cout << "Informe a quantidade de horas extras trabalhadas: ";
     cin >> horas_extras;
@@ -53,11 +53,11 @@ int main() {
 
     float salario_final = salario_liquido + gratificacao;
 
-    cout << "\nSalário bruto: R$ " << salario_bruto << endl;
+    cout << "\nSalÃ¡rio bruto: R$ " << salario_bruto << endl;
     cout << "IRRF: R$ " << irrf << endl;
-    cout << "Salário líquido: R$ " << salario_liquido << endl;
-    cout << "Gratificação: R$ " << gratificacao << endl;
-    cout << "Salário final a receber: R$ " << salario_final << endl;
+    cout << "SalÃ¡rio lÃ­quido: R$ " << salario_liquido << endl;
+    cout << "GratificaÃ§Ã£o: R$ " << gratificacao << endl;
+    cout << "SalÃ¡rio final a receber: R$ " << salario_final << endl;
 
     return 0;
 }

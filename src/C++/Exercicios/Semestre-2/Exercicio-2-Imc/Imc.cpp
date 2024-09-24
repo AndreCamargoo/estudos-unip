@@ -3,15 +3,11 @@
 
 using namespace std;
 
-// O IMC é uma medida geral e pode não levar em consideração fatores como composição corporal, massa muscular ou distribuição de gordura
-
 int main() {
-    // Configura a localidade para português
-    setlocale(LC_ALL, "portuguese");
-
     float peso, altura, imc;
 
-    // Usando um loop for para calcular o IMC de apenas uma pessoa
+    setlocale(LC_ALL, "portuguese");
+
     for (int i = 0; i < 1; i++) {
         cout << "Digite seu peso: ";
         cin >> peso;

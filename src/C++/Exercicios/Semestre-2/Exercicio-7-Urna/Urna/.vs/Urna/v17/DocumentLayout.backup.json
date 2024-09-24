@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\andre\\Desktop\\pseu\\C\u002B\u002B\\Urna\\Urna\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{127304C3-E8E9-4A59-A937-ED7A3DEBE190}|Urna.vcxproj|C:\\Users\\andre\\Desktop\\pseu\\C\u002B\u002B\\Urna\\Urna\\Urna.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{127304C3-E8E9-4A59-A937-ED7A3DEBE190}|Urna.vcxproj|solutionrelative:Urna.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Urna.cpp",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\pseu\\C\u002B\u002B\\Urna\\Urna\\Urna.cpp",
+              "RelativeDocumentMoniker": "Urna.cpp",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\pseu\\C\u002B\u002B\\Urna\\Urna\\Urna.cpp",
+              "RelativeToolTip": "Urna.cpp",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAwIgAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-23T19:28:36.484Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

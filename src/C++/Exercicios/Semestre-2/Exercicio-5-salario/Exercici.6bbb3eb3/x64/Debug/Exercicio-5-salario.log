@@ -1,6 +1,6 @@
 ﻿  salario.cpp
-C:\Users\andre\Desktop\pseu\C++\Exercicio-5-salario\salario.cpp(25,29): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-C:\Users\andre\Desktop\pseu\C++\Exercicio-5-salario\salario.cpp(27,28): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-C:\Users\andre\Desktop\pseu\C++\Exercicio-5-salario\salario.cpp(38,30): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
-C:\Users\andre\Desktop\pseu\C++\Exercicio-5-salario\salario.cpp(41,30): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
-  Exercicio-5-salario.vcxproj -> C:\Users\andre\Desktop\pseu\C++\Exercicio-5-salario\x64\Debug\Exercicio-5-salario.exe
+\\wsl.localhost\Ubuntu\home\andre\projects\faculdade\src\C++\Exercicios\Semestre-2\Exercicio-5-salario\salario.cpp(25,29): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+\\wsl.localhost\Ubuntu\home\andre\projects\faculdade\src\C++\Exercicios\Semestre-2\Exercicio-5-salario\salario.cpp(27,28): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
+\\wsl.localhost\Ubuntu\home\andre\projects\faculdade\src\C++\Exercicios\Semestre-2\Exercicio-5-salario\salario.cpp(38,30): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+\\wsl.localhost\Ubuntu\home\andre\projects\faculdade\src\C++\Exercicios\Semestre-2\Exercicio-5-salario\salario.cpp(41,30): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+  Exercicio-5-salario.vcxproj -> \\wsl.localhost\Ubuntu\home\andre\projects\faculdade\src\C++\Exercicios\Semestre-2\Exercicio-5-salario\x64\Debug\Exercicio-5-salario.exe

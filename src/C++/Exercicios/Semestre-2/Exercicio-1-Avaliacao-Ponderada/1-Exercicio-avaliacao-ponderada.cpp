@@ -7,7 +7,7 @@ int main() {
 
 	float n1, n2, n3, mp;
 
-	// Configura a localidade para português
+	// Configura a localidade para portuguï¿½s
 	setlocale(LC_ALL, "portuguese");
 
 	cout << "Digite sua primeira nota: ";
@@ -22,12 +22,12 @@ int main() {
 	mp = ((n1 * 2) + (n2 * 3) + (n3 * 5)) / (2 + 3 + 5);
 
 
-	// Verificação da nota e exibição de mensagens
+	// Verificaï¿½ï¿½o da nota e exibiï¿½ï¿½o de mensagens
 	if ((mp >= 8) && (mp <= 10)) {
-		cout << "Sua nota foi " << mp << ". Ótimo!" << endl;
+		cout << "Sua nota foi " << mp << ". Ã³timo!" << endl;
 	}
 	else if ( (mp >= 7) && (mp < 8) ) {
-		cout << "Sua nota foi " << mp << ". Na média!" << endl;
+		cout << "Sua nota foi " << mp << ". Na mÃ©dia!" << endl;
 	}
 	else if ( (mp >= 6) && (mp < 7) ) {
 		cout << "Sua nota foi " << mp << ". Preocupante, mais passou!" << endl;
